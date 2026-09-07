@@ -1,5 +1,4 @@
-button {
-  border-radius: 20px;
+.primary {
   background: var(--Primary-900, #000);
   display: inline-flex;
   padding: 16px 20px;
@@ -7,15 +6,91 @@ button {
   align-items: center;
   border: none;
   color: #f5f5f5;
-  font-family: Montserrat; /*comment importer font???*/
+  font-family: Montserrat;
   font-size: 16px;
 }
-button:hover {
+
+button.default {
   border-radius: 20px;
+  font-size: 16px;
+}
+
+button.small {
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+button:hover {
   background: var(--Primary-800, #343434);
 }
 
 button:disabled {
-  border-radius: 20px;
   background: var(--Primary-100, #bbb);
+}
+
+.secondary {
+  background: var(--Primary-900, #000);
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #f5f5f5;
+  font-family: Montserrat;
+}
+
+.secondary.default {
+  display: inline-flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+
+  background: var(--Primary-0, #fff);
+  color: var(--Primary-900, #000);
+}
+.button-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #000;
+}
+
+.small {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+
+.secondary.default:disabled {
+  display: inline-flex;
+  padding: 16px 20px;
+  justify-content: center;
+  align-items: center;
+  color: var(--Primary-100, #bbb);
+
+  background: var(--Primary-200, #eceeef);
+}
+
+.secondary.small {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  background: var(--Primary-0, #fff);
+  color: var(--Primary-900, #000);
+}
+
+.secondary.small:disabled {
+  display: inline-flex;
+  padding: 8px 12px;
+  justify-content: center;
+  align-items: center;
+  background: var(--Primary-200, #eceeef);
+  color: var(--Primary-100, #bbb);
+}
+
+.secondary:hover {
+  background: var(--Primary-500, #b4bbc0);
+  color: var(--Primary-900, #000);
 }
