@@ -1,0 +1,115 @@
+body {
+  font-family: Montserrat;
+}
+
+.card {
+  display: inline-flex;
+  padding: 8px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 32px;
+  background: var(--Primary-0, #fff);
+  box-shadow: 0 8px 10px 2px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  width: 284px;
+  height: 284px;
+  aspect-ratio: 1/1;
+  border-radius: 28px;
+  background: lightgray -6.84px 0px / 104.817% 100% no-repeat;
+}
+
+h2 {
+  color: var(--Primary-900, #000);
+
+  /* heading-3 */
+
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+h3 {
+  color: var(--Primary-600, #6c6f72);
+
+  /* body-3/regular */
+
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.infos {
+  display: flex;
+  width: 284px;
+  padding: 4px 8px 12px 8px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.price-flight {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.flight {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.button-heart-button {
+  display: flex;
+  flex-direction: row;
+  align-self: stretch;
+  gap: 8px;
+}
+
+.button-heart-button button {
+  flex: 1;
+}
+
+.heart-button {
+  border: 1px solid var(--Primary-500, #b4bbc0);
+  border-radius: 100px;
+  align-items: center;
+  align-self: center;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
+}
+
+.price {
+  gap: 8px;
+}
+
+.flight {
+  gap: 8px;
+}
+
+.heart-button:hover {
+  background-color: #6c6f72;
+}
+
+.heart-button:hover svg path {
+  stroke: #fff;
+}
